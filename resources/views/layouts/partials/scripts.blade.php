@@ -20,6 +20,11 @@
 <script src="{{ asset('assets/js/main.js?v=6.0') }}"></script>
 <script src="{{ asset('assets/js/shop.js?v=6.0') }}"></script>
 
+<script src="{{ asset('backend/js/vendors/jquery.fullscreen.min.js') }}"></script>
+<script src="{{ asset('backend/js/vendors/chart.js') }}"></script>
+<!-- Main Script -->
+<script src="{{ asset('backend/js/custom-chart.js') }}" type="text/javascript"></script>
+
 @if(session('success'))
 <script>
     Swal.fire({

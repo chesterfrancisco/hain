@@ -53,7 +53,24 @@ class HomeController extends Controller
         ));
     }
 
-   
+    public function about()
+    {
+        $categories = ProductCategory::all();
+
+        return view('pages.about', compact(
+            'categories',
+        ));
+    }
+
+    public function contact()
+    {
+        $categories = ProductCategory::all();
+
+        return view('pages.contact', compact(
+            'categories',
+        ));
+    }
+    
     public function fetchByCategory($categoryId = null)
     {
         $query = Product::join('vendors', 'products.vendor_id', '=', 'vendors.id')

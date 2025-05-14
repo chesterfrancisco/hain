@@ -2,10 +2,6 @@
 
 @section('content')
 
-<!-- <a href="{{ route('login.facebook') }}" class="btn btn-facebook">Continue with Facebook</a>
-<a href="{{ route('login.google') }}" class="btn btn-google">Continue with Google</a> -->
-
-
 <section class="home-slider position-relative mb-30">
     <div class="container">
         <div class="row">

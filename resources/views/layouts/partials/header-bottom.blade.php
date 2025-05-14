@@ -78,20 +78,29 @@
                                 </ul>
                             </li>
                           
+                            @auth
                             <li>
-                                <a class="active" href="{{ route('home') }}">Home</a>
+                                <a class="active" href="{{ route('dashboard') }}">Home</a>
                             </li>
+                            @else
                             <li>
-                                <a href="page-about.html">About Hain Express</a>
+                                <a class="active" href="{{ route('home') }}">Home</a>   
                             </li>
+                            @endauth
+                            
                             <li>
-                                <a href="shop-grid-right.html">Shop</a>                               
+                                <a href="{{ route('about') }}">About Hain Express</a>
                             </li>
-                            <li>
+                            <!--
+                                <li>
+                                <a href="shop-grid-right.html">Shop</a>
+                            </li>
+                            -->                               
+                            <!--<li>
                                 <a href="#">Vendors</a>
-                            </li>
+                            </li>-->
                             <li>
-                                <a href="page-contact.html">Contact Us</a>
+                                <a href="{{ route('contact') }}">Contact Us</a>
                             </li>
                         </ul>
                     </nav>

@@ -49,7 +49,7 @@
                                 <img class="svgInject" alt="Nest" src="{{ asset('assets/imgs/theme/icons/icon-user.svg') }}" />
                             </a>
                             <a href="#">
-                                <span class="lable ml-0">Account</span>
+                                <span class="lable ml-0">{{ Auth::user()->name }}</span>
                             </a>
                             <div class="cart-dropdown-wrap cart-dropdown-hm2 account-dropdown">
                                 <ul>

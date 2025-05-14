@@ -47,6 +47,14 @@
                                                 <button type="submit" class="btn btn-heading btn-block hover-up" name="login">Log in</button>
                                             </div>
                                         </form>
+                                         <div class="heading_s1">
+                                            <br>
+                                            <h6 class="mb-30">
+                                                <a href="{{ route('vendor.login') }}">Sign In as a Vendor</a>
+                                                <br>
+                                                <a href="{{ route('rider.login') }}">Sign In as a Rider</a>
+                                            </h6>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
